@@ -942,7 +942,7 @@ let videoLoaded4 = () => { placeholder_if4.value = false; };
 
 /* .................. */
 .note-secondary79 {
-    background: linear-gradient(to right, #dfdeee, #efeded)
+    background: linear-gradient(to right, #dfdeee, #efeded);
 }
 
 iframe {
