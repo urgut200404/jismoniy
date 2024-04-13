@@ -103,7 +103,7 @@
                                     </MDBDropdownToggle>
                                     <MDBDropdownMenu aria-labelledby="dropdownMenuButton" id="drop_child_pages">
                                         <MDBDropdownItem href="#"> <i class="fas fa-utensils"></i> Sport va to'g'ri ovqatlanish</MDBDropdownItem>
-                                        <MDBDropdownItem href="#"><i class="fas fa-dumbbell"></i> Mashq qilish uskunalari</MDBDropdownItem>
+                                        <MDBDropdownItem href="#"><i class="fas fa-dumbbell"></i> Ilmiy Maqolalar</MDBDropdownItem>
                                         <MDBDropdownItem href="/jdpu">JDPU yonalishlar</MDBDropdownItem>
                                     </MDBDropdownMenu>
                                 </MDBDropdown>

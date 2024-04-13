@@ -6,35 +6,36 @@
 
 
         <div class="container mb-5 p-0 text-center  instalar_uchunStillar">
-            <h4 class="text-center pt-5 pb-5">Universitetlar </h4>
+            <h4 class="text-center pt-5 pb-5">Ilovalar </h4>
             <MDBCardGroup class=" text-center card_groups777" style="gap: 70px;">
                 <MDBCard class="card_w75 ">
                     <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/channels4_profile.jpg" top alt="..." />
-                    </p>
-                    <hr>
-                    <MDBCardBody >
-                        <MDBCardTitle><router-link :to="{ name: 'jdpu' }">Jizzax Davlat Pedagokika
-                                Universiteti</router-link></MDBCardTitle>
-                    </MDBCardBody>
-                </MDBCard>
-                <MDBCard class="card_w75">
-                    <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/buxdu.jpg" top alt="..." />
+                        <MDBCardImg src="../../src/images/healts.jpg" top alt="..." class="ilovalar_uchun"
+                            style="border-radius: 50%;" />
                     </p>
                     <hr>
                     <MDBCardBody>
-                        <MDBCardTitle><router-link to="/buxdu">Buxoro Davlat Pedagokika Universiteti</router-link>
+                        <MDBCardTitle><a href="https://play.google.com/store/search?q=samsung+health+monitor+watch+3&c=apps&hl=ru&gl=US">Yuklash va toliq info</a>
                         </MDBCardTitle>
                     </MDBCardBody>
                 </MDBCard>
                 <MDBCard class="card_w75">
                     <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/chirchiq.jpg" top alt="..." />
+                        <MDBCardImg src="../../src/images/strava.webp" top alt="..." class="ilovalar_uchun"  style="border-radius: 50%;"/>
                     </p>
                     <hr>
                     <MDBCardBody>
-                        <MDBCardTitle><router-link to="/chirchiq">Chirchiq Davlat Pedagokika Universiteti</router-link>
+                        <MDBCardTitle><a href="https://play.google.com/store/search?q=strava+%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%BE&c=apps&hl=ru&gl=US">Yuklash va toliq info</a>
+                        </MDBCardTitle>
+                    </MDBCardBody>
+                </MDBCard>
+                <MDBCard class="card_w75">
+                    <p class="text-center card_respotext">
+                        <MDBCardImg src="../../src/images/ggfit.webp" top alt="..." class="ilovalar_uchun" />
+                    </p>
+                    <hr>
+                    <MDBCardBody>
+                        <MDBCardTitle><a href="https://play.google.com/store/apps/details?id=com.google.android.apps.fitness">Yuklash va toliq info</a>
                         </MDBCardTitle>
                     </MDBCardBody>
                 </MDBCard>
@@ -44,13 +45,12 @@
             <div class=" note-secondary mb-3 p-2 rounded-2  d-flex justify-content-center align-items-center">
                 <h3 class="mashiqQIlishuskunalari">Mashq Qilish Uskunalari</h3>
             </div>
-            
+
             <n-carousel autoplay draggable class="" :slides-per-view="4.5" :space-between="15" :loop="true">
-               
-                    <img class="carousel-img rounded-4 border h-75" :src="img7.img" v-for="img7 in img_list"
-                        :key="img7.id" >
-                
-            </n-carousel>   
+
+                <img class="carousel-img rounded-4 border h-75" :src="img7.img" v-for="img7 in img_list" :key="img7.id">
+
+            </n-carousel>
         </div>
         <div class="container border mt-5 d-none">
             <div>
@@ -81,9 +81,8 @@ import Footer7 from "./Footer7.vue";
 import { MDBCardGroup, MDBCard, MDBCardBody, MDBCardTitle, MDBCardText, MDBCardImg, MDBCardFooter } from "mdb-vue-ui-kit";
 
 import Navi from "../components/Navi.vue";
-AOS.init();
 let placeholder_if00 = ref(true);
-const carouselLoad =() => { placeholder_if00.value = false; };
+const carouselLoad = () => { placeholder_if00.value = false; };
 
 
 let img_list = ref([
@@ -114,46 +113,58 @@ let img_list2 = ref([
 </script>
 
 
-<style>
- 
+<style> 
 
 /* responsive uchun  stillar */
 
-@media (max-width:576px){
-    .card_groups777{ 
+@media (max-width:576px) {
+    .card_groups777 {
         display: flex;
-        height: auto !important;   
+        height: auto !important;
         gap: 10px !important;
     }
 
-    .card_w75{
+    .card_w75 {
         width: 80% !important;
         font-size: 15px !important;
     }
-    .card_w75 .card-body .card-title{
+
+    .card_w75 .card-body .card-title {
         font-size: 12px;
     }
-    .card-body{
+
+    .card-body {
         padding: 0;
     }
-    .home_start_menu{
+
+    .home_start_menu {
         height: 300px !important;
     }
 
-    .mashiqQIlishuskunalari{
-        font-size: 15px; 
+    .mashiqQIlishuskunalari {
+        font-size: 15px;
     }
-    .card_respotext{
-        /* margin-bottom: 0; */
-    }
+
+    /* .card_respotext {
+        margin-bottom: 0;
+    } */
 
 }
 
 
-.card_groups777{
-    width: 80%; 
+.card_respotext { 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_groups777 {
+    width: 80%;
     height: 350px;
 }
+
 .carousel-img {
     width: 100%;
     height: 100%;

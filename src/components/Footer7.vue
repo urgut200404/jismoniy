@@ -1,9 +1,9 @@
 <template>
  <div class="bg-dark">
     <div class="container">
-        <MDBFooter :text="['center', 'lg-start', 'muted']" class="bg-dark">
+        <MDBFooter :text="['center', 'lg-start', 'muted']" class="bg-dark ">
             <!-- Section: Social media -->
-            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom text-light">
                 <!-- Left -->
                 <div class="me-5 d-none d-lg-block">
                     <span>Get connected with us on social networks:</span>
@@ -43,7 +43,7 @@
                         <!-- Grid column -->
                         <MDBCol md="3" lg="4" xl="3" class="mx-auto mb-4">
                             <!-- Content -->
-                            <h6 class="text-uppercase fw-bold mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4 text-light">
                                 <i class="fas fa-gem me-3 link-secondary"></i>Main JDPU
                             </h6>
                             <p class="text-light">
@@ -57,60 +57,60 @@
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <MDBCol md="2" lg="2" xl="2" class="mx-auto mb-4">
+                        <MDBCol md="2" lg="2" xl="2" class="mx-auto mx78 mb-4 text-light">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Products</h6>
+                            <h6 class="text-uppercase fw-bold mb-4 text-warning borlink">Products</h6>
                             <p>
-                                <a href="#!" class="text-reset">Bosh Menu</a>
+                                <a href="#!" class="text-reset borlink7878">Bosh Menu</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Sayt haqida</a>
+                                <a href="#!" class="text-reset borlink7878">Sayt haqida</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Qo'llanma</a>
+                                <a href="#!" class="text-reset borlink7878">Qo'llanma</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Sport</a>
+                                <a href="#!" class="text-reset borlink7878">Sport</a>
                             </p>
                         </MDBCol>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <MDBCol md="3" lg="2" xl="2" class="mx-auto mb-4 dspnone">
+                        <MDBCol md="3" lg="2" xl="2" class="mx-auto mx78 mb-4 dspnone text-light">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Useful links</h6>
+                            <h6 class="text-uppercase fw-bold mb-4 text-warning borlink">Useful links</h6>
                             <p>
-                                <a href="#!" class="text-reset">Togri ovqatlanish</a>
+                                <a href="#!" class="text-reset borlink7878 ">Togri ovqatlanish</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Mashq qilish uskunalari</a>
+                                <a href="#!" class="text-reset borlink7878">Mashq qilish uskunalari</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Qiz bolalar uchun</a>
+                                <a href="#!" class="text-reset borlink7878">Qiz bolalar uchun</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">O'g'il bollalar uchun</a>
+                                <a href="#!" class="text-reset borlink7878">O'g'il bollalar uchun</a>
                             </p>
                         </MDBCol>
                         <!-- Grid column -->
 
                         <!-- Grid column -->
-                        <MDBCol md="4" lg="3" xl="3" class="mx-auto mb-md-0 mb-4">
+                        <MDBCol md="4" lg="3" xl="3" class="mx-auto mx78 mb-md-0 mb-4 text-light">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <h6 class="text-uppercase fw-bold mb-4 text-warning borlink">Contact</h6>
                             <p>
-                                <i class="fas fa-home me-3 link-secondary"></i> Uzbekistan, Jizzax
+                                <i class="fas fa-home me-3 link-light"></i> Uzbekistan, Jizzax
                             </p>
                             <p>
-                                <i class="fas fa-envelope me-3 link-secondary"></i>
+                                <i class="fas fa-envelope me-3 link-light"></i>
                                 info@example.com
                             </p>
                             <p>
-                                <MDBIcon icon="phone" class="me-3 link-secondary" />
+                                <MDBIcon icon="phone" class="me-3 link-light" />
                                 + 01 234 567 88
                             </p>
                             <p>
-                                <MDBIcon icon="print" class="me-3 link-secondary" />
+                                <MDBIcon icon="print" class="me-3 link-light" />
                                 + 01 234 567 89
                             </p>
                         </MDBCol>
@@ -122,8 +122,8 @@
             <!-- Section: Links  -->
 
             <!-- Copyright -->
-            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05)">
-                © 2021 Copyright:
+            <div class="text-center p-4 text-warning" style="background-color: rgba(0, 0, 0, 0.05)">
+                © {{ new Date().getFullYear() }} Copyright:
                 <a class="text-reset fw-bold" href="#">MAIN.JDPU.UZ</a>
             </div>
             <!-- Copyright -->
@@ -134,13 +134,48 @@
 
 <script setup>
 import { MDBFooter, MDBIcon, MDBRow, MDBCol, MDBContainer } from "mdb-vue-ui-kit";
-import {ref} from "vue"
-let vaqt_uchun =ref()
-let tm= new Date();
-
+import {ref} from "vue";
 </script>
 
 <style scoped>
+
+ 
+
+/* .borlink7878{ 
+    padding-bottom: 5px;
+    position: relative;  
+} */
+
+.mx78 p{position: relative;padding-bottom: 1px;transition: ease 0.3;}
+.mx78 p::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background:linear-gradient(to left, transparent , orange);
+    transition: ease 0.3s;
+}
+.mx78 p:hover::before{
+    width: 100%;
+}
+.mx78 p:hover{
+    color:orange;
+}
+
+/* .borlink7878::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    transition:ease 0.5s;
+    height: 2px;
+    background: orange;
+    bottom: 0;
+}
+
+.borlink7878:hover::before{
+    width: 100%;
+} */
 @media (max-width:576px){
     .dspnone{
         display: none;
