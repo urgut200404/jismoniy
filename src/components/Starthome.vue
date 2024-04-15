@@ -10,7 +10,7 @@
             <MDBCardGroup class=" text-center card_groups777" style="gap: 70px;">
                 <MDBCard class="card_w75 ">
                     <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/healts.jpg" top alt="..." class="ilovalar_uchun"
+                        <img src="../assets/healts.jpg" top alt="..." class="ilovalar_uchun"
                             style="border-radius: 50%;" />
                     </p>
                     <hr>
@@ -21,7 +21,7 @@
                 </MDBCard>
                 <MDBCard class="card_w75">
                     <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/strava.webp" top alt="..." class="ilovalar_uchun"  style="border-radius: 50%;"/>
+                        <img src="../assets/strava.webp" top alt="..." class="ilovalar_uchun"  style="border-radius: 50%;"/>
                     </p>
                     <hr>
                     <MDBCardBody>
@@ -31,7 +31,7 @@
                 </MDBCard>
                 <MDBCard class="card_w75">
                     <p class="text-center card_respotext">
-                        <MDBCardImg src="../../src/images/ggfit.webp" top alt="..." class="ilovalar_uchun" />
+                        <img src="../assets/ggfit.webp" top alt="..." class="ilovalar_uchun" />
                     </p>
                     <hr>
                     <MDBCardBody>
@@ -41,7 +41,7 @@
                 </MDBCard>
             </MDBCardGroup>
         </div>
-        <div class="container mb-5">
+        <div class="container mb-5" id="mashuskunalari">
             <div class=" note-secondary mb-3 p-2 rounded-2  d-flex justify-content-center align-items-center">
                 <h3 class="mashiqQIlishuskunalari">Mashq Qilish Uskunalari</h3>
             </div>
@@ -54,7 +54,7 @@
         </div>
         <div class="container border mt-5 d-none">
             <div>
-                <img src="../images/fakul_img.gif" alt="" class="w-25">
+                <img src="../assets/fakul_img.gif" alt="" class="w-25">
             </div>
             <div></div>
         </div>
@@ -86,28 +86,28 @@ const carouselLoad = () => { placeholder_if00.value = false; };
 
 
 let img_list = ref([
-    { id: 0, img: new URL("../images/m9.jpg", import.meta.url) },
-    { id: 1, img: new URL("../images/m1.jpg", import.meta.url) },
-    { id: 2, img: new URL("../images/m2.jpg", import.meta.url) },
-    { id: 3, img: new URL("../images/m3.jpg", import.meta.url) },
-    { id: 4, img: new URL("../images/m4.jpg", import.meta.url) },
-    { id: 5, img: new URL("../images/m10.png", import.meta.url) },
-    { id: 6, img: new URL("../images/m6.webp", import.meta.url) },
-    { id: 7, img: new URL("../images/m7.webp", import.meta.url) },
-    { id: 8, img: new URL("../images/m8.jpg", import.meta.url) },
-    { id: 9, img: new URL("../images/m9.jpg", import.meta.url) },
-    { id: 10, img: new URL("../images/m1.jpg", import.meta.url) },
+    { id: 0, img: new URL("../assets/m9.jpg", import.meta.url) },
+    { id: 1, img: new URL("../assets/m1.jpg", import.meta.url) },
+    { id: 2, img: new URL("../assets/m2.jpg", import.meta.url) },
+    { id: 3, img: new URL("../assets/m3.jpg", import.meta.url) },
+    { id: 4, img: new URL("../assets/m4.jpg", import.meta.url) },
+    { id: 5, img: new URL("../assets/m10.png", import.meta.url) },
+    { id: 6, img: new URL("../assets/m6.webp", import.meta.url) },
+    { id: 7, img: new URL("../assets/m7.webp", import.meta.url) },
+    { id: 8, img: new URL("../assets/m8.jpg", import.meta.url) },
+    { id: 9, img: new URL("../assets/m9.jpg", import.meta.url) },
+    { id: 10, img: new URL("../assets/m1.jpg", import.meta.url) },
 ])
 
 
 
 
 let img_list2 = ref([
-    { id: 0, img: new URL("../images/ms1.jpg", import.meta.url) },
-    { id: 1, img: new URL("../images/ms2.jpg", import.meta.url) },
-    { id: 2, img: new URL("../images/ms3.jpg", import.meta.url) },
-    { id: 3, img: new URL("../images/m3.jpg", import.meta.url) },
-    { id: 4, img: new URL("../images/m4.jpg", import.meta.url) },
+    { id: 0, img: new URL("../assets/ms1.jpg", import.meta.url) },
+    { id: 1, img: new URL("../assets/ms2.jpg", import.meta.url) },
+    { id: 2, img: new URL("../assets/ms3.jpg", import.meta.url) },
+    { id: 3, img: new URL("../assets/m3.jpg", import.meta.url) },
+    { id: 4, img: new URL("../assets/m4.jpg", import.meta.url) },
 ])
 
 </script>
@@ -175,7 +175,7 @@ let img_list2 = ref([
 
 .home_start_menu {
     height: 550px;
-    background: url("../images/jdpu11.jpg") no-repeat;
+    background: url("../assets/jdpu11.jpg") no-repeat;
     background-size: cover;
     background-position-y: 100%;
     /* filter: brightness(80%); */

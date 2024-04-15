@@ -81,7 +81,7 @@
                 <MDBNavbar expand="lg" light class="text-light pb-0" container>
                     <MDBNavbarBrand href="#">
                         <a href="/">
-                            <img src="../images/channels4_profile.jpg" alt="" id="web_logo">
+                            <img src="../assets/channels4_profile.jpg" alt="" id="web_logo">
                         </a>
                         <div class="logo_text ms-1">
                             <!-- <p>Samarqand Davlat Unversititi <br> Urgut Filali, Online Kutubxona <br>Markazi </p> -->
@@ -102,9 +102,11 @@
                                         Jismoniy tarbiya va sog‘lom turmush tarzi
                                     </MDBDropdownToggle>
                                     <MDBDropdownMenu aria-labelledby="dropdownMenuButton" id="drop_child_pages">
-                                        <MDBDropdownItem href="#"> <i class="fas fa-utensils"></i> Sport va to'g'ri ovqatlanish</MDBDropdownItem>
-                                        <MDBDropdownItem href="#"><i class="fas fa-dumbbell"></i> Ilmiy Maqolalar</MDBDropdownItem>
-                                        <MDBDropdownItem href="/jdpu">JDPU yonalishlar</MDBDropdownItem>
+                                        <MDBDropdownItem href="/jdpu"><i class="fas fa-sitemap"></i> JDPU Ta'lim  Yo'nalishlar</MDBDropdownItem>
+                                        <MDBDropdownItem href="#"> <i class="fas fa-utensils"></i> Sport va To'g'ri Ovqatlanish</MDBDropdownItem>
+                                        <MDBDropdownItem href="#"><i class="fas fa-book"></i> Ilmiy Maqolalar</MDBDropdownItem> 
+                                        <MDBDropdownItem href="/jdpu"><i class="fas fa-dumbbell"></i> Mashiq Qilish Uchun Online ilovalar Haqida Malumot</MDBDropdownItem>
+                                        <MDBDropdownItem href="/jdpu"><i class="fas fa-sitemap"></i> Samsung Heath haqida malumot</MDBDropdownItem>
                                     </MDBDropdownMenu>
                                 </MDBDropdown>
                             </MDBNavbarItem>
@@ -161,11 +163,11 @@ const dropdown5 = ref(false);
 let router = useRouter();
 const sigin_login = ref(true);
 
-let language = ref([
-    { "id": 0, "text": "UZB", "images": new URL("../Images/Logo.png", import.meta.url) },
-    { "id": 1, "text": "RU", "images": new URL("../Images/Logo.png", import.meta.url) },
-    { "id": 2, "text": "ENG", "images": new URL("../Images/Logo.png", import.meta.url) },
-])
+// let language = ref([
+//     { "id": 0, "text": "UZB", "images": new URL("../Images/Logo.png", import.meta.url) },
+//     { "id": 1, "text": "RU", "images": new URL("../Images/Logo.png", import.meta.url) },
+//     { "id": 2, "text": "ENG", "images": new URL("../Images/Logo.png", import.meta.url) },
+// ])
 
 let input_value = ref();
 let search_books_fung = (async()=>{

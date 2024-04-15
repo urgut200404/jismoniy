@@ -13,28 +13,28 @@
                     <div id="yonalishlar" class="p-2">
                         <p class="text-center p-0 m-0"><b class="h4 text-dark">Ta'lim yo‘nalishlari</b></p>
                         <ul class="fakellist p-0">
-                            <li :style="fakultet_click == 'fl' ? fakultetstilll : ''" @click="fakultet_click = 'fl'">
+                            <li :style="fakultet_click == 'fl' ? fakultetstilll : ''" @click="fakultet_clickFUN ('fl')">
                                 Filologiya
                                 (O‘zbek tili, Rus tili, Adabiyot, Xorijiy tillar)</li>
                             <li :style="fakultet_click == 'matem' ? fakultetstilll : ''"
-                                @click="fakultet_click = 'matem'">
+                                @click="fakultet_clickFUN ('matem')">
                                 Matematika, fizika, informatika</li>
-                            <li :style="fakultet_click == 'ist' ? fakultetstilll : ''" @click="fakultet_click = 'ist'">
+                            <li :style="fakultet_click == 'ist' ? fakultetstilll : ''" @click="fakultet_clickFUN ('ist')">
                                 Tarix
                             </li>
-                            <li :style="fakultet_click == 'pg' ? fakultetstilll : ''" @click="fakultet_click = 'pg'">
+                            <li :style="fakultet_click == 'pg' ? fakultetstilll : ''" @click="fakultet_clickFUN ('pg')">
                                 Pedagogika
                                 va psixologiyasi</li>
                             <li :style="fakultet_click == 'bosh' ? fakultetstilll : ''"
-                                @click="fakultet_click = 'bosh'">
+                                @click="fakultet_clickFUN ('bosh')">
                                 Boshlang'ich ta’lim</li>
-                            <li :style="fakultet_click == 'mus' ? fakultetstilll : ''" @click="fakultet_click = 'mus'">
+                            <li :style="fakultet_click == 'mus' ? fakultetstilll : ''" @click="fakultet_clickFUN ('mus')">
                                 Musiqa
                             </li>
-                            <li :style="fakultet_click == 'tex' ? fakultetstilll : ''" @click="fakultet_click = 'tex'">
+                            <li :style="fakultet_click == 'tex' ? fakultetstilll : ''" @click="fakultet_clickFUN ('tex')">
                                 Texnologik ta’lim</li>
                             <li :style="fakultet_click == 'jism' ? fakultetstilll : ''"
-                                @click="fakultet_click = 'jism'">
+                                @click="fakultet_clickFUN ('jism')">
                                 Jismoniy ma'daniyat</li>
                         </ul>
                     </div>
@@ -48,7 +48,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -140,7 +140,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -234,7 +234,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -325,7 +325,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -418,7 +418,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -511,7 +511,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -604,7 +604,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/user137.webp" style="border-radius: none !important;"
+                                    <img src="../assets/user137.webp" style="border-radius: none !important;"
                                         class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Toliq ism familiya</h5>
@@ -696,7 +696,7 @@
                             <div class=" h-50 d-flex justify-content-around gap-2 border-bottom pb-5 pt-2 rahbar_mxres">
                                 <div class="w-75 border-end  d-flex align-items-center gap-1"
                                     style="flex-direction: column;">
-                                    <img src="../images/ustoz.jpg" class="card-image" alt="" id="card_img">
+                                    <img src="../assets/ustoz.jpg" class="card-image" alt="" id="card_img">
                                     <div class="card-body m-0">
                                         <h5>Nurmatov Eldor Ziyat o‘g‘li</h5>
                                     </div>
@@ -881,6 +881,11 @@ let placeholder_if3 = ref(true);
 let placeholder_if4 = ref(true);
 let placeholder_if5 = ref(true);
 let placeholder_div = ref(true);
+
+const  fakultet_clickFUN = (async(itemchild)=>{
+    fakultet_click.value = itemchild;
+})
+
 
 const videoSrc = 'https://www.youtube.com/embed/2ZrjJUze5ls?si=KEk7UQ44YotCBFD4';
 

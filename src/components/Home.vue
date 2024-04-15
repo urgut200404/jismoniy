@@ -7,7 +7,7 @@
       </div>
       <div class="w-50 d-flex d-none   justify-content-center mx777">
         <div class="text-center  home_shadow" >
-          <img src="../images/sports7.jpg" alt="" class="h-100 w-100 " style="border-radius: 40px;">
+          <img src="../assets/sports7.jpg" alt="" class="h-100 w-100 " style="border-radius: 40px;">
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ let Starthome = (()=>{
 .nuxt-jdp {
   height: 100vh;  
   /* background: rgb(43, 24, 33); */
-  background: url("../images/sports7.jpg") no-repeat;
+  background: url("../assets/sports7.jpg") no-repeat;
   background-size: cover;
   filter: brightness(70%);
   /* filter: brightness(); */
@@ -99,7 +99,7 @@ let Starthome = (()=>{
   }
 
   .nuxt-jdp { 
-    background: url("../images/boys.jpg") no-repeat;  
+    background: url("../assets/boys.jpg") no-repeat;  
     background-size: cover;
     text-align: center; 
     padding: 0 !important;

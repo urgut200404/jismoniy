@@ -50,8 +50,8 @@
                                 Bizni Ilovani yuklab oling
                             </p>
                             <p class="d-flex">
-                               <a href="#"> <button class="btn  p-0 down_btn"><img src="../images/ggplay.jpg" class="w-100 h-75 rounded-2"></button></a>
-                                <a href="#"><button class="btn  p-0 down_btn"><img src="../images/apstore.png" class="w-100 h-100"></button></a>
+                               <a href="#"> <button class="btn  p-0 down_btn"><img src="../assets/ggplay.jpg" class="w-100 h-75 rounded-2"></button></a>
+                                <a href="#"><button class="btn  p-0 down_btn"><img src="../assets/apstore.png" class="w-100 h-100"></button></a>
                             </p>
                         </MDBCol>
                         <!-- Grid column -->

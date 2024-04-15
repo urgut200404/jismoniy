@@ -12,7 +12,7 @@
                 <div class="" style="width: 32%;">
                     <div id="yonalishlar" class="d-flex align-items-center gap-4" style="flex-direction: column;">
                         <div class="rounded-3 w-100 h-100">
-                            <img src="../images/ms1.jpg" class="card-img-top card-img-top78 h-100 rounded-3"
+                            <img src="../assets/ms1.jpg" class="card-img-top card-img-top78 h-100 rounded-3"
                                 alt="Fissure in Sandstone" style="filter: drop-shadow(0 0 10px #bab8b8);" />
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                                 <p class="note note-secondary7 m-0"><b style="text-transform: uppercase;">YUGURISHNING
                                         FOYDASI</b></p>
                                 <div class="mt-2">
-                                    <img src="../images/run7.jpg" alt="" class="w-100">
+                                    <img src="../assets/run7.jpg" alt="" class="w-100">
                                     <div v-show="placeholder_if0">
                                         <h5 class="card-title placeholder-glow">
                                             <span class="placeholder col-12"
@@ -54,7 +54,7 @@
                                 <p class="note note-secondary7 m-0"><b style="text-transform: uppercase;">BO'Y O'STIRISH
                                         MASHIQLARI</b></p>
                                 <div class="mt-2">
-                                    <img src="../images/as.jpg" alt="" class="w-100">
+                                    <img src="../assets/as.jpg" alt="" class="w-100">
                                     <div v-show="placeholder_if1">
                                         <h5 class="card-title placeholder-glow">
                                             <span class="placeholder col-12"
@@ -77,7 +77,7 @@
                             <div class="border-top  pt-5 text-center" style="margin-top: 100px;">
                                 <p class="note note-secondary7 m-0"><b style="text-transform: uppercase;">YOGA</b></p>
                                 <div class="mt-2">
-                                    <img src="../images/yoga.jpg" alt="" class="w-100">
+                                    <img src="../assets/yoga.jpg" alt="" class="w-100">
                                     <div v-show="placeholder_if3">
                                         <h5 class="card-title placeholder-glow">
                                             <span class="placeholder col-12"
@@ -117,20 +117,20 @@ let fakultetstilll = ref("background: #0a42f85f;color: #fff;  filter: drop-shado
 let fakultet_click = ref("jism");
 let placeholder_if0 = ref(true);
 let placeholder_if1 = ref(true);
-let placeholder_if2 = ref(true);
+// let placeholder_if2 = ref(true);
 let placeholder_if3 = ref(true);
-let placeholder_if4 = ref(true);
-let placeholder_if5 = ref(true);
-let placeholder_div = ref(true);
+// let placeholder_if4 = ref(true);
+// let placeholder_if5 = ref(true);
+// let placeholder_div = ref(true);
 
 const videoSrc = 'https://www.youtube.com/embed/2ZrjJUze5ls?si=KEk7UQ44YotCBFD4';
 
-let videoLoaded_div7 = () => { placeholder_div.value = false; };
-let videoLoaded = () => { placeholder_if0.value = false; };
-let videoLoaded1 = () => { placeholder_if1.value = false; };
-let videoLoaded2 = () => { placeholder_if2.value = false; };
-let videoLoaded3 = () => { placeholder_if3.value = false; };
-let videoLoaded4 = () => { placeholder_if4.value = false; };
+// let videoLoaded_div7 = async() => { placeholder_div.value = false; };
+let videoLoaded = async() => { placeholder_if0.value = false; };
+let videoLoaded1 = async() => { placeholder_if1.value = false; };
+// let videoLoaded2 = async() => { placeholder_if2.value = false; };
+let videoLoaded3 = async() => { placeholder_if3.value = false; };
+// let videoLoaded4 = async() => { placeholder_if4.value = false; };
 
 </script>
 
